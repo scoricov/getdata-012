@@ -36,3 +36,5 @@ In order to reproduce the analysis, follow these simple steps:
     x <- read.table("action_subject_means.txt")
     x
     ```
+
+Please note, that package 'dplyr' must be installed before running the script.
