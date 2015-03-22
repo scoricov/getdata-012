@@ -40,7 +40,13 @@ test <- mutate(test, subject = testSubj[,1], activity = testAct[,2])
 # of each variable for each activity and each subject.
 meansByActSubj <-
     merge(train, test, all = TRUE) %>%
-    select(activity, subject, contains("mean"), contains("std")) %>%
+    select(activity,
+           subject,
+           ends_with(".mean"),
+           ends_with(".mean.X"),
+           ends_with(".mean.Y"),
+           ends_with(".mean.Z"),
+           contains(".std")) %>%
     group_by(activity, subject) %>%
     summarise_each(funs(mean))
 
