@@ -59,6 +59,7 @@ The set of variables that were estimated from these signals are:
 - std:  Standard deviation
 
 File 'action_subject_means.txt' contains the following variables:
+
 1. "activity": character enumeration of "WALKING", "WALKING_UPSTAIRS","WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING". Describes the human activity being observed.
 2. "subject": int, identifies the subject who performed the activity. Its range is from 1 to 30.
 3. "tBodyAccMag.mean": int, standard gravity units 'g'. Time domain signal. Average value for each activity and subject.
