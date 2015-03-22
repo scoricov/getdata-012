@@ -58,6 +58,7 @@ The set of variables that were estimated from these signals are:
 - mean: Mean value
 - std:  Standard deviation
 
+File 'action_subject_means.txt' contains the following variables:
 1. "activity": character enumeration of "WALKING", "WALKING_UPSTAIRS","WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING". Describes the human activity being observed.
 2. "subject": int, identifies the subject who performed the activity. Its range is from 1 to 30.
 3. "tBodyAccMag.mean": int, standard gravity units 'g'. Time domain signal. Average value for each activity and subject.
@@ -84,7 +85,7 @@ The set of variables that were estimated from these signals are:
 24. "tBodyGyroJerk.mean.Y": int, radians/second. Time domain signal. Average value for each activity and subject.
 25. "fBodyAcc.mean.Y": int, standard gravity units 'g'. Frequency domain signal. Average value for each activity and subject.
 26. "fBodyAccJerk.mean.Y": int, standard gravity units 'g'. Frequency domain signal. Average value for each activity and subject.
-27. "fBodyGyro.mean.Y":: int, radians/second. Frequency domain signal. Average value for each activity and subject.
+27. "fBodyGyro.mean.Y": int, radians/second. Frequency domain signal. Average value for each activity and subject.
 28. "tBodyAcc.mean.Z": int, standard gravity units 'g'. Time domain signal. Average value for each activity and subject.
 29. "tGravityAcc.mean.Z": int, standard gravity units 'g'. Time domain signal. Average value for each activity and subject.
 30. "tBodyAccJerk.mean.Z": int, standard gravity units 'g'. Time domain signal. Average value for each activity and subject.
