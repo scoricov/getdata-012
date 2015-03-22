@@ -1,5 +1,7 @@
 # getdata-012
 
+This is a course project for Getting and Cleaning Data course at coursera.org.
+
 ## Summary
 
 The analysis script 'run_analysis.R' does the following:
@@ -28,8 +30,8 @@ In order to reproduce the analysis, follow these simple steps:
     Rscript run_analysis.R
     ```
 5. Resulting tidy data set will be written to the text file called 'action_subject_means.txt'.
-6. Load and view the tidy dataset in R:
-    
+6. Load and view the tidy data set in R:
+
     ```R
     x <- read.table("action_subject_means.txt")
     x
