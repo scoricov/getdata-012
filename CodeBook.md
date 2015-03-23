@@ -1,7 +1,10 @@
 # Code Book: Tidy UCI HAR Dataset
 
-This codebook describes the tidy dataset obtained from UCI HAR Dataset according to the task in course project "Getting and Cleaning Data".
+This codebook describes the tidy dataset obtained from UCI HAR Dataset according to the task in course project "Getting and Cleaning Data", the variables, the work to be performed on the data set and working of 'run_analysis.R' code to obtain the tidy data set.
 
+## Data source
+
+This dataset is derived from the "Human Activity Recognition Using Smartphones Data Set" which was originally made avaiable here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ## Synopsis
 
@@ -23,7 +26,9 @@ The dataset includes the following files:
 - 'action_subject_means.txt': Contains tidy data set with the average of each variable for each activity and each subject.
 
 
-## Variables
+## Feature selection
+
+Please,refer to the README and features.txt files in the original dataset to learn more about the feature selection for the raw data set.
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc.XYZ and tGyro.XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc.XYZ and tGravityAcc.XYZ)
 using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
@@ -57,6 +62,9 @@ The set of variables that were estimated from these signals are:
 
 - mean: Mean value
 - std:  Standard deviation
+
+
+## Variables
 
 File 'action_subject_means.txt' contains the following variables:
 
@@ -128,3 +136,15 @@ File 'action_subject_means.txt' contains the following variables:
 66. "fBodyBodyAccJerkMag.std": int, standard gravity units 'g'. Frequency domain signal. Average value for each activity and subject.
 67. "fBodyBodyGyroMag.std": int, radians/second. Frequency domain signal. Average value for each activity and subject.
 68. "fBodyBodyGyroJerkMag.std": int, radians/second. Frequency domain signal. Average value for each activity and subject.
+
+
+## Reproduction
+
+The following steps were made to process the raw data:
+
+1. Merge the training and the test sets to create one data set.
+2. Extract only the measurements on the mean and standard deviation for each measurement.
+3. Use descriptive activity names to name the activities in the data set
+4. Appropriately label the data set with descriptive variable names.
+5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
+

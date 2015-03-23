@@ -1,6 +1,6 @@
-# getdata-012
+# Getting and Cleaning Data: Course Project
 
-This is a course project for Getting and Cleaning Data course at coursera.org.
+This repository contains the assignment for course project from Getting and Cleaning Data course at coursera.org, which is a part of the Data Science specialization.
 
 ## Summary
 
@@ -11,6 +11,12 @@ The analysis script 'run_analysis.R' does the following:
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
+## Contents
+- 'CodeBook.md': this code book provides a brief overview on the data set, files included, the variables, the work to be performed on the dataset and working of 'run_analysis.R' code to obtain the tidy dataset.
+- 'run_analysis.R': the script which performs the analysis.
+- 'action_subject_means.txt': the resulting tidy data set produced by 'run_analysis.R' script.
 
 
 ## How to reproduce
@@ -37,4 +43,7 @@ In order to reproduce the analysis, follow these simple steps:
     x
     ```
 
-Please note, that package 'dplyr' must be installed before running the script.
+##Pre-requisites
+
+- Package 'dplyr' must be installed before running the script.
+- This course project uses the "Human Activity Recognition Using Smartphones Dataset" which can be downloaded [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
